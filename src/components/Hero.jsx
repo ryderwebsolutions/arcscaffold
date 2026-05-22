@@ -48,10 +48,10 @@ export default function Hero() {
             Planned, erected, inspected, and managed with a safety-first workflow by a trusted Irish scaffolding team.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 mb-10 max-w-4xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5 mb-10 max-w-4xl">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center gap-2.5 bg-arc-orange hover:bg-arc-orange-dark text-white font-bold text-sm sm:text-base px-6 py-4 rounded transition-all duration-200 hover:translate-y-[-1px] shadow-orange min-h-[56px]"
+              className="inline-flex items-center justify-center gap-2.5 bg-arc-orange hover:bg-arc-orange-dark text-white font-bold text-sm sm:text-base px-6 py-4 rounded transition-all duration-200 hover:translate-y-[-1px] shadow-orange min-h-[56px] text-center"
             >
               Request A Scaffolding Quote
               <svg className="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true">
@@ -60,7 +60,7 @@ export default function Hero() {
             </Link>
             <a
               href={`tel:${site.phoneTel}`}
-              className="inline-flex items-center justify-center gap-2.5 bg-transparent hover:bg-white/8 text-white font-bold text-sm sm:text-base px-6 py-4 rounded border-2 border-white/30 hover:border-white/60 transition-all duration-200 min-h-[56px]"
+              className="inline-flex items-center justify-center gap-2.5 bg-transparent hover:bg-white/8 text-white font-bold text-sm sm:text-base px-6 py-4 rounded border-2 border-white/30 hover:border-white/60 transition-all duration-200 min-h-[56px] text-center"
             >
               <svg className="w-5 h-5 text-arc-orange flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -69,7 +69,7 @@ export default function Hero() {
             </a>
             <a
               href={`tel:${site.phoneTelSecondary}`}
-              className="inline-flex items-center justify-center gap-2.5 bg-arc-orange/10 hover:bg-arc-orange/20 text-white font-bold text-sm sm:text-base px-6 py-4 rounded border-2 border-arc-orange/55 hover:border-arc-orange transition-all duration-200 min-h-[56px]"
+              className="inline-flex items-center justify-center gap-2.5 bg-arc-orange/10 hover:bg-arc-orange/20 text-white font-bold text-sm sm:text-base px-6 py-4 rounded border-2 border-arc-orange/55 hover:border-arc-orange transition-all duration-200 min-h-[56px] text-center"
             >
               <svg className="w-5 h-5 text-arc-orange flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
