@@ -10,7 +10,6 @@ const InstagramIcon = () => (
 const projectTypes = [
   "Commercial Scaffolding",
   "Residential Scaffolding",
-  "Temporary Roof System",
   "Specialized Trade Support",
   "Safety Inspection & Tagging",
   "Labour Specialists",

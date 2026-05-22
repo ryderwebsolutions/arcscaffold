@@ -10,7 +10,7 @@ export default function ProjectsPage() {
     <section className="bg-white pt-28 pb-20 lg:pb-28">
       <PageMeta
         title="Scaffolding Projects | ARC Scaffold Services"
-        description="View ARC's commercial, residential, temporary roof, and access scaffolding projects across Ireland."
+        description="View ARC's commercial, residential, and access scaffolding projects across Ireland."
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl lg:text-5xl font-black text-navy mb-4">Projects</h1>

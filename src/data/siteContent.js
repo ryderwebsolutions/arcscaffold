@@ -33,11 +33,6 @@ export const coreServices = [
     short: "Program-driven scaffold packages for offices, schools, retail, and industrial schemes.",
   },
   {
-    slug: "temporary-roof-systems",
-    title: "Temporary Roof Systems",
-    short: "Weather-protected structures that protect schedules during Irish conditions.",
-  },
-  {
     slug: "access-scaffolding",
     title: "Access Scaffolding",
     short: "Purpose-built access systems for specialist trades and constrained environments.",
@@ -48,7 +43,7 @@ export const trustPoints = [
   "Fully Compliant",
   "Commercial & Residential",
   "Safety-First Approach",
-  "Temporary Roof Specialists",
+  "Specialist Access Solutions",
   "Insured & Experienced",
   "Ireland Coverage",
 ];
@@ -109,17 +104,6 @@ export const servicePageContent = {
       "Coordination with principal contractors and site teams",
     ],
   },
-  "temporary-roof-systems": {
-    title: "Temporary Roof Systems",
-    intro:
-      "Engineered temporary roof structures that keep works progressing by protecting workfaces, materials, and internal areas.",
-    points: [
-      "Weather-protected refurbishment and extension work",
-      "Span design for complex roof geometry",
-      "Rapid deployment to prevent programme slippage",
-      "Integrated access and safe egress routes",
-    ],
-  },
   "access-scaffolding": {
     title: "Access Scaffolding",
     intro:
@@ -136,7 +120,6 @@ export const servicePageContent = {
 export const projectCategories = [
   "Commercial Projects",
   "Residential Scaffolding",
-  "Temporary Roof Systems",
   "Access Solutions",
   "Large-Scale Installations",
 ];
@@ -157,14 +140,6 @@ export const featuredProjectNarratives = [
     challenge: "Limited footprint and occupied neighbouring properties.",
     solution: "Compact loading strategy with controlled material zones.",
     outcome: "Safe trade flow and clean site presentation through all phases.",
-  },
-  {
-    category: "Temporary Roof Systems",
-    title: "Weather-Protected Roof Replacement",
-    scope: "Temporary roof and integrated access for major structural roof works.",
-    challenge: "Irish weather risk during open-roof stages.",
-    solution: "Rapid temporary roof deployment with reinforced support towers.",
-    outcome: "Programme continuity and protected internal finishes.",
   },
   {
     category: "Access Solutions",

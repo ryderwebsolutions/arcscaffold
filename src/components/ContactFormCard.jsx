@@ -3,7 +3,6 @@ import { useState } from "react";
 const serviceOptions = [
   "Residential Scaffolding",
   "Commercial Scaffolding",
-  "Temporary Roof Systems",
   "Access Scaffolding",
   "Other",
 ];

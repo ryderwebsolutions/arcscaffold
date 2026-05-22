@@ -31,13 +31,11 @@ export const pageImages = {
   services: [
     fromArcmedia(7, "Residential scaffolding around a live housing development"),
     fromArcmedia(31, "Commercial scaffold system spanning multiple building elevations"),
-    fromArcmedia(40, "Temporary roof and weather-protection scaffold arrangement"),
     fromArcmedia(18, "Specialist access scaffold setup for constrained work area"),
   ],
   featuredProjects: [
     fromArcmedia(26, "Wide commercial scaffolding installation with phased access zones"),
     fromArcmedia(14, "Residential scaffold package with clean perimeter access"),
-    fromArcmedia(35, "Temporary roof project with engineered support towers"),
     fromArcmedia(11, "Industrial access scaffold around plant and services"),
   ],
   projectsPageLead: fromArcmedia(
@@ -79,9 +77,6 @@ export const pageImages = {
     ),
     "commercial-scaffolding": [31, 26, 33].map((index, idx) =>
       fromArcmedia(index, `Commercial scaffolding image ${idx + 1}`)
-    ),
-    "temporary-roof-systems": [35, 40, 30].map((index, idx) =>
-      fromArcmedia(index, `Temporary roof scaffolding image ${idx + 1}`)
     ),
     "access-scaffolding": [18, 11, 24].map((index, idx) =>
       fromArcmedia(index, `Access scaffolding solution image ${idx + 1}`)
