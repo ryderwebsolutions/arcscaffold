@@ -1,0 +1,90 @@
+const arcmediaImports = import.meta.glob("../../arcmedia/*.jpeg", {
+  eager: true,
+  import: "default",
+});
+
+const arcmediaNames = Object.keys(arcmediaImports).sort((a, b) =>
+  a.localeCompare(b)
+);
+
+export const arcmediaLibrary = arcmediaNames.map((path, index) => ({
+  src: arcmediaImports[path],
+  path,
+  title: `ARC project image ${index + 1}`,
+  alt: `ARC scaffolding installation and worksite detail image ${index + 1}`,
+}));
+
+const fromArcmedia = (index, alt) => ({
+  src: arcmediaLibrary[index]?.src,
+  alt,
+});
+
+export const pageImages = {
+  homeHero: fromArcmedia(
+    32,
+    "Large ARC scaffold installation with dark cinematic industrial lighting"
+  ),
+  trust: fromArcmedia(
+    24,
+    "Close detail of compliant scaffold structure and safe platform access"
+  ),
+  services: [
+    fromArcmedia(7, "Residential scaffolding around a live housing development"),
+    fromArcmedia(31, "Commercial scaffold system spanning multiple building elevations"),
+    fromArcmedia(40, "Temporary roof and weather-protection scaffold arrangement"),
+    fromArcmedia(18, "Specialist access scaffold setup for constrained work area"),
+  ],
+  featuredProjects: [
+    fromArcmedia(26, "Wide commercial scaffolding installation with phased access zones"),
+    fromArcmedia(14, "Residential scaffold package with clean perimeter access"),
+    fromArcmedia(35, "Temporary roof project with engineered support towers"),
+    fromArcmedia(11, "Industrial access scaffold around plant and services"),
+  ],
+  projectsPageLead: fromArcmedia(
+    30,
+    "Large-scale ARC scaffolding structure across a commercial project"
+  ),
+  projectsGallery: [0, 3, 5, 8, 10, 12, 16, 19, 21, 23, 27, 33, 36, 38, 41].map(
+    (index, idx) =>
+      fromArcmedia(
+        index,
+        `ARC project sequence image ${idx + 1} showing scaffold progress and completion`
+      )
+  ),
+  safetyHero: fromArcmedia(
+    9,
+    "ARC scaffold crew operating under safety-controlled work conditions"
+  ),
+  safetyDetails: [4, 6, 13, 17, 20, 22].map((index, idx) =>
+    fromArcmedia(index, `Scaffold safety and inspection detail image ${idx + 1}`)
+  ),
+  processHero: fromArcmedia(
+    34,
+    "ARC scaffold installation process underway on a structured workfront"
+  ),
+  processSteps: [2, 15, 25, 28, 37, 39].map((index, idx) =>
+    fromArcmedia(index, `ARC process stage image ${idx + 1}`)
+  ),
+  aboutHero: fromArcmedia(
+    29,
+    "ARC scaffold leadership and delivery standards represented on a major site"
+  ),
+  contactHero: fromArcmedia(
+    1,
+    "ARC scaffold site access route ready for client coordination"
+  ),
+  serviceDetail: {
+    "residential-scaffolding": [7, 14, 20].map((index, idx) =>
+      fromArcmedia(index, `Residential scaffolding image ${idx + 1}`)
+    ),
+    "commercial-scaffolding": [31, 26, 33].map((index, idx) =>
+      fromArcmedia(index, `Commercial scaffolding image ${idx + 1}`)
+    ),
+    "temporary-roof-systems": [35, 40, 30].map((index, idx) =>
+      fromArcmedia(index, `Temporary roof scaffolding image ${idx + 1}`)
+    ),
+    "access-scaffolding": [18, 11, 24].map((index, idx) =>
+      fromArcmedia(index, `Access scaffolding solution image ${idx + 1}`)
+    ),
+  },
+};
