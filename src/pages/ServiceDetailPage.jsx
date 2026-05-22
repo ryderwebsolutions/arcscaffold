@@ -24,17 +24,19 @@ export default function ServiceDetailPage() {
         <h1 className="text-4xl lg:text-5xl font-black text-navy mb-4">{content.title}</h1>
         <p className="text-arc-steel max-w-3xl mb-10">{content.intro}</p>
 
-        <div className="grid md:grid-cols-3 gap-5 mb-10">
-          {gallery.map((item, idx) => (
-            <img
-              key={`${slug}-${idx}`}
-              src={item.src}
-              alt={item.alt}
-              className="w-full h-64 object-cover rounded-xl"
-              loading="lazy"
-            />
-          ))}
-        </div>
+        {gallery.length > 0 && (
+          <div className={`${gallery.length === 1 ? "mb-10" : "grid md:grid-cols-3 gap-5 mb-10"}`}>
+            {gallery.map((item, idx) => (
+              <img
+                key={`${slug}-${idx}`}
+                src={item.src}
+                alt={item.alt}
+                className={gallery.length === 1 ? "w-full h-[420px] object-cover rounded-xl" : "w-full h-64 object-cover rounded-xl"}
+                loading="lazy"
+              />
+            ))}
+          </div>
+        )}
 
         <div className="bg-arc-grey rounded-xl p-6 lg:p-8 mb-8">
           <h2 className="text-2xl font-black text-navy mb-4">What Is Included</h2>

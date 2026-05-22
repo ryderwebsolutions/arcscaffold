@@ -33,6 +33,12 @@ export const coreServices = [
     short: "Program-driven scaffold packages for offices, schools, retail, and industrial schemes.",
   },
   {
+    slug: "industrial-scaffolding",
+    title: "Industrial Scaffolding",
+    short:
+      "Specialist scaffold access solutions for industrial plants, infrastructure works, confined environments, and high-spec technical projects.",
+  },
+  {
     slug: "access-scaffolding",
     title: "Access Scaffolding",
     short: "Purpose-built access systems for specialist trades and constrained environments.",
@@ -102,6 +108,17 @@ export const servicePageContent = {
       "Program-linked phased access plans",
       "Heavy-duty loading bays and protected walkways",
       "Coordination with principal contractors and site teams",
+    ],
+  },
+  "industrial-scaffolding": {
+    title: "Industrial Scaffolding",
+    intro:
+      "Technical scaffold access for industrial plants, utility infrastructure, confined process environments, and high-spec maintenance operations.",
+    points: [
+      "Confined-space scaffold planning and controlled access routes",
+      "Industrial maintenance shutdown support and phased delivery",
+      "Pipework, process plant, and utility-infrastructure scaffold systems",
+      "PPE-first execution with high-compliance site coordination",
     ],
   },
   "access-scaffolding": {

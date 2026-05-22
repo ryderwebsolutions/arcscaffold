@@ -8,7 +8,7 @@ export default function ServicesPage() {
     <section className="bg-arc-grey pt-28 pb-20 lg:pb-28">
       <PageMeta
         title="Scaffolding Services | ARC Scaffold Services"
-        description="Explore ARC's residential, commercial, and access scaffolding services across Ireland."
+        description="Explore ARC's residential, commercial, industrial, and access scaffolding services across Ireland."
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl lg:text-5xl font-black text-navy mb-4">Scaffolding Services</h1>

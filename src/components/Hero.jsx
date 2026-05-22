@@ -41,7 +41,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-xl sm:text-2xl text-gray-200 max-w-2xl mb-4 leading-relaxed font-medium">
-            Commercial, residential, and access scaffolding engineered for real-world site performance.
+            Commercial, residential, industrial, and access scaffolding engineered for real-world site performance.
           </p>
 
           <p className="text-sm sm:text-base text-gray-400 max-w-2xl mb-10 leading-relaxed">

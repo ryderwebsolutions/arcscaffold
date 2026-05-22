@@ -3,6 +3,8 @@ const arcmediaImports = import.meta.glob("../../arcmedia/*.jpeg", {
   import: "default",
 });
 
+import industrialScaffoldingReference from "../../industrialscaffolding.jpeg";
+
 const arcmediaNames = Object.keys(arcmediaImports).sort((a, b) =>
   a.localeCompare(b)
 );
@@ -31,6 +33,10 @@ export const pageImages = {
   services: [
     fromArcmedia(7, "Residential scaffolding around a live housing development"),
     fromArcmedia(31, "Commercial scaffold system spanning multiple building elevations"),
+    {
+      src: industrialScaffoldingReference,
+      alt: "Industrial scaffolding in a confined utility environment with PPE worker and large green process pipe",
+    },
     fromArcmedia(18, "Specialist access scaffold setup for constrained work area"),
   ],
   featuredProjects: [
@@ -78,6 +84,12 @@ export const pageImages = {
     "commercial-scaffolding": [31, 26, 33].map((index, idx) =>
       fromArcmedia(index, `Commercial scaffolding image ${idx + 1}`)
     ),
+    "industrial-scaffolding": [
+      {
+        src: industrialScaffoldingReference,
+        alt: "Industrial scaffold access system beside large process pipe with PPE operative in confined infrastructure environment",
+      },
+    ],
     "access-scaffolding": [18, 11, 24].map((index, idx) =>
       fromArcmedia(index, `Access scaffolding solution image ${idx + 1}`)
     ),
