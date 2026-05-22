@@ -1,4 +1,4 @@
-import { featuredProjectNarratives, projectCategories } from "../data/siteContent";
+import { featuredProjectNarratives } from "../data/siteContent";
 import { pageImages } from "../data/imageAssets";
 import PageMeta from "../components/PageMeta";
 import { Link } from "react-router-dom";
@@ -12,23 +12,9 @@ export default function ProjectsPage() {
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl lg:text-5xl font-black text-navy mb-4">Projects</h1>
-        <p className="text-arc-steel max-w-3xl mb-8">
+        <p className="text-arc-steel max-w-3xl mb-10">
           A structured portfolio of ARC scaffolding projects, presented by category with clear scope, challenge, solution, and outcome.
         </p>
-
-        <img
-          src={pageImages.projectsPageLead.src}
-          alt={pageImages.projectsPageLead.alt}
-          className="w-full h-[42vw] max-h-[460px] min-h-[240px] rounded-xl object-cover mb-12"
-        />
-
-        <div className="flex flex-wrap gap-2 mb-12">
-          {projectCategories.map((category) => (
-            <span key={category} className="text-xs font-bold uppercase tracking-[0.14em] px-3 py-2 rounded bg-navy text-white">
-              {category}
-            </span>
-          ))}
-        </div>
 
         <div className="space-y-14">
           {featuredProjectNarratives.map((project, idx) => (
