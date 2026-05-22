@@ -19,31 +19,35 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-navy shadow-xl shadow-navy-dark/40" : "bg-navy/98"
+        scrolled ? "bg-navy shadow-lg shadow-navy-dark/35" : "bg-navy/98"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-[72px]">
+        <div className={`flex items-center justify-between transition-all duration-300 ${scrolled ? "h-14 lg:h-[60px]" : "h-14 lg:h-[66px]"}`}>
           {/* Logo */}
           <Link to="/" className="flex items-center flex-shrink-0 group" aria-label="ARC Scaffold Services home">
             <img
               src={brandLogoSrc}
               alt="ARC Scaffold Services"
-              className="h-11 w-auto object-contain sm:h-12 lg:h-14 transition-transform duration-200 group-hover:scale-[1.01]"
+              className={`w-auto object-contain transition-all duration-300 group-hover:scale-[1.01] ${
+                scrolled ? "h-9 sm:h-10 lg:h-11" : "h-10 sm:h-11 lg:h-12"
+              }`}
               loading="eager"
               decoding="async"
             />
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-7" aria-label="Main navigation">
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-6" aria-label="Main navigation">
             {navLinks.map((link) => (
               <NavLink
                 key={link.to}
                 to={link.to}
                 className={({ isActive }) =>
-                  `text-gray-300 hover:text-white font-medium text-sm transition-colors duration-200 relative group ${
-                    isActive ? "text-white" : ""
+                  `font-medium text-[13px] xl:text-sm transition-colors duration-200 relative group ${
+                    isActive
+                      ? "text-navy bg-white/95 font-semibold px-2 py-1 rounded-sm shadow-[0_1px_2px_rgba(0,0,0,0.15)]"
+                      : "text-gray-300 hover:text-white"
                   }`
                 }
               >
@@ -54,7 +58,7 @@ export default function Navbar() {
           </nav>
 
           {/* Desktop CTA + Mobile Hamburger */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             <a
               href={`tel:${site.phoneTel}`}
               className="hidden xl:flex items-center gap-2 text-gray-300 hover:text-white text-xs font-medium transition-colors"
@@ -77,12 +81,12 @@ export default function Navbar() {
             </a>
             <Link
               to="/contact"
-              className="hidden lg:inline-flex items-center gap-2 bg-arc-orange hover:bg-arc-orange-dark text-white font-semibold text-sm px-5 py-2.5 rounded transition-colors duration-200 shadow-orange"
+              className="hidden lg:inline-flex items-center gap-2 bg-arc-orange hover:bg-arc-orange-dark text-white font-semibold text-sm px-4 py-2 rounded transition-colors duration-200 shadow-orange"
             >
               Request A Quote
             </Link>
             <button
-              className="lg:hidden text-white p-2 rounded hover:bg-white/10 transition-colors"
+              className="lg:hidden text-white p-1.5 rounded hover:bg-white/10 transition-colors"
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label={menuOpen ? "Close menu" : "Open menu"}
               aria-expanded={menuOpen}
@@ -102,21 +106,27 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="lg:hidden border-t border-white/10 py-3" role="navigation" aria-label="Mobile navigation">
+          <div className="lg:hidden border-t border-white/10 py-2.5" role="navigation" aria-label="Mobile navigation">
             {navLinks.map((link) => (
               <NavLink
                 key={link.to}
                 to={link.to}
-                className="flex items-center px-4 py-3.5 text-gray-300 hover:text-white hover:bg-white/5 font-medium text-sm transition-colors rounded"
+                className={({ isActive }) =>
+                  `flex items-center px-4 py-3 font-medium text-sm transition-colors rounded ${
+                    isActive
+                      ? "text-navy bg-white font-semibold border border-white/35"
+                      : "text-gray-300 hover:text-white hover:bg-white/5"
+                  }`
+                }
                 onClick={handleLinkClick}
               >
                 {link.label}
               </NavLink>
             ))}
-            <div className="px-4 pt-3 pb-2 space-y-2">
+            <div className="px-4 pt-2.5 pb-2 space-y-2">
               <a
                 href={`tel:${site.phoneTel}`}
-                className="flex items-center justify-center gap-2 border border-white/20 hover:border-white/40 text-white font-semibold text-sm px-5 py-3 rounded transition-colors"
+                className="flex items-center justify-center gap-2 border border-white/20 hover:border-white/40 text-white font-semibold text-sm px-5 py-2.5 rounded transition-colors"
                 onClick={handleLinkClick}
               >
                 <svg className="w-4 h-4 text-arc-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -126,7 +136,7 @@ export default function Navbar() {
               </a>
               <a
                 href={`tel:${site.phoneTelSecondary}`}
-                className="flex items-center justify-center gap-2 border border-white/20 hover:border-white/40 text-white font-semibold text-sm px-5 py-3 rounded transition-colors"
+                className="flex items-center justify-center gap-2 border border-white/20 hover:border-white/40 text-white font-semibold text-sm px-5 py-2.5 rounded transition-colors"
                 onClick={handleLinkClick}
               >
                 <svg className="w-4 h-4 text-arc-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -136,7 +146,7 @@ export default function Navbar() {
               </a>
               <Link
                 to="/contact"
-                className="flex items-center justify-center bg-arc-orange hover:bg-arc-orange-dark text-white font-bold text-sm px-5 py-3.5 rounded transition-colors shadow-orange"
+                className="flex items-center justify-center bg-arc-orange hover:bg-arc-orange-dark text-white font-bold text-sm px-5 py-3 rounded transition-colors shadow-orange"
                 onClick={handleLinkClick}
               >
                 Request A Quote
