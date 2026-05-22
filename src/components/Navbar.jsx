@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-navy shadow-lg shadow-navy-dark/35" : "bg-navy/98"
+        scrolled ? "bg-navy shadow-lg shadow-navy-dark/35" : "bg-navy lg:bg-navy/98"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -106,7 +106,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="lg:hidden border-t border-white/10 py-2.5" role="navigation" aria-label="Mobile navigation">
+          <div className="lg:hidden bg-navy border-t border-white/10 py-2.5" role="navigation" aria-label="Mobile navigation">
             {navLinks.map((link) => (
               <NavLink
                 key={link.to}
