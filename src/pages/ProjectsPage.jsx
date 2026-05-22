@@ -4,8 +4,6 @@ import PageMeta from "../components/PageMeta";
 import { Link } from "react-router-dom";
 
 export default function ProjectsPage() {
-  const timelineLabels = ["Before", "Process", "Completed"];
-
   return (
     <section className="bg-white pt-28 pb-20 lg:pb-28">
       <PageMeta
@@ -68,25 +66,6 @@ export default function ProjectsPage() {
                 </div>
               </div>
 
-              <div className="grid sm:grid-cols-3 gap-3 lg:gap-4" aria-label={`${project.title} project timeline imagery`}>
-                {timelineLabels.map((label, shotIdx) => {
-                  const galleryItem = pageImages.projectsGallery[idx * 3 + shotIdx + 5] || pageImages.projectsGallery[idx];
-
-                  return (
-                    <figure key={`${project.title}-${label}`} className="overflow-hidden rounded-lg border border-gray-200 bg-arc-grey">
-                      <img
-                        src={galleryItem.src}
-                        alt={`${label} stage for ${project.title.toLowerCase()}`}
-                        className="w-full h-44 object-cover"
-                        loading="lazy"
-                      />
-                      <figcaption className="px-3 py-2 text-xs font-bold uppercase tracking-[0.12em] text-arc-steel">
-                        {label}
-                      </figcaption>
-                    </figure>
-                  );
-                })}
-              </div>
             </article>
           ))}
         </div>
