@@ -9,6 +9,12 @@ const InstagramIcon = () => (
   </svg>
 );
 
+const LinkedInIcon = () => (
+  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M19 3A2 2 0 0 1 21 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14Zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.86 0-1.68.37-2.24 1.02v-.88h-2.79v8.42h2.79v-4.95c0-.77.62-1.39 1.39-1.39.77 0 1.39.62 1.39 1.39v4.95h2.72ZM6.88 8.56a1.68 1.68 0 1 0 0-3.36 1.68 1.68 0 0 0 0 3.36Zm1.39 9.94V10.08H5.49v8.42h2.78Z" />
+  </svg>
+);
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -120,6 +126,15 @@ export default function Footer() {
                 aria-label="ARC Scaffold Services on Instagram"
               >
                 <InstagramIcon />
+              </a>
+              <a
+                href={site.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-white/8 hover:bg-arc-orange border border-white/10 hover:border-arc-orange rounded-lg flex items-center justify-center text-gray-400 hover:text-white transition-all duration-200"
+                aria-label="ARC Scaffold Services on LinkedIn"
+              >
+                <LinkedInIcon />
               </a>
             </div>
 
