@@ -11,11 +11,9 @@ export default function ProcessPage() {
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl lg:text-5xl font-black text-navy mb-4">ARC Delivery Process</h1>
-        <p className="text-arc-steel max-w-3xl mb-10">
+        <p className="text-arc-steel max-w-3xl mb-8">
           Each project follows a disciplined workflow designed to protect site safety, timeline certainty, and trade access quality.
         </p>
-
-        <img src={pageImages.processHero.src} alt={pageImages.processHero.alt} className="w-full h-[42vw] max-h-[440px] min-h-[240px] object-cover rounded-xl mb-12" />
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {processSteps.map((step, idx) => (

@@ -11,11 +11,9 @@ export default function SafetyPage() {
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl lg:text-5xl font-black text-navy mb-4">Safety & Compliance</h1>
-        <p className="text-arc-steel max-w-3xl mb-10">
+        <p className="text-arc-steel max-w-3xl mb-8">
           ARC applies professional scaffold safety procedures on every project through documented inspections, clear tagging systems, and proactive risk management.
         </p>
-
-        <img src={pageImages.safetyHero.src} alt={pageImages.safetyHero.alt} className="w-full h-[42vw] max-h-[440px] min-h-[240px] object-cover rounded-xl mb-10" />
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {safetySections.map((section, idx) => (
