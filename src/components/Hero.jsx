@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { site } from "../data/siteContent";
 import { pageImages } from "../data/imageAssets";
 
@@ -49,15 +48,16 @@ export default function Hero() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5 mb-10 max-w-4xl">
-            <Link
-              to="/contact"
+            <a
+              href={`tel:${site.phoneTel}`}
               className="inline-flex items-center justify-center gap-2.5 bg-arc-orange hover:bg-arc-orange-dark text-white font-bold text-sm sm:text-base px-6 py-4 rounded transition-all duration-200 hover:translate-y-[-1px] shadow-orange min-h-[56px] text-center"
+              aria-label={`Call Dan on ${site.phone}`}
             >
-              Request A Scaffolding Quote
+              Call Dan Now
               <svg className="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </Link>
+            </a>
             <a
               href={`tel:${site.phoneTel}`}
               className="inline-flex items-center justify-center gap-2.5 bg-transparent hover:bg-white/8 text-white font-bold text-sm sm:text-base px-6 py-4 rounded border-2 border-white/30 hover:border-white/60 transition-all duration-200 min-h-[56px] text-center"

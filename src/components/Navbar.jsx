@@ -79,12 +79,13 @@ export default function Navbar() {
               </svg>
               Keith: {site.phoneSecondary}
             </a>
-            <Link
-              to="/contact"
+            <a
+              href={`tel:${site.phoneTel}`}
               className="hidden lg:inline-flex items-center gap-2 bg-arc-orange hover:bg-arc-orange-dark text-white font-semibold text-sm px-4 py-2 rounded transition-colors duration-200 shadow-orange"
+              aria-label={`Call Dan on ${site.phone}`}
             >
-              Request A Quote
-            </Link>
+              Call Dan
+            </a>
             <button
               className="lg:hidden text-white p-1.5 rounded hover:bg-white/10 transition-colors"
               onClick={() => setMenuOpen(!menuOpen)}
@@ -144,13 +145,14 @@ export default function Navbar() {
                 </svg>
                 Call Keith: {site.phoneSecondary}
               </a>
-              <Link
-                to="/contact"
+              <a
+                href={`tel:${site.phoneTel}`}
                 className="flex items-center justify-center bg-arc-orange hover:bg-arc-orange-dark text-white font-bold text-sm px-5 py-3 rounded transition-colors shadow-orange"
                 onClick={handleLinkClick}
+                aria-label={`Call Dan on ${site.phone}`}
               >
-                Request A Quote
-              </Link>
+                Call Dan
+              </a>
             </div>
           </div>
         )}

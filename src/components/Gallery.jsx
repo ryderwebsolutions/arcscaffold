@@ -78,10 +78,11 @@ export default function Gallery() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
-              href="#contact"
+              href={`tel:${site.phoneTel}`}
               className="inline-flex items-center gap-2 border border-arc-orange/50 hover:border-arc-orange text-arc-orange hover:text-white hover:bg-arc-orange font-semibold text-sm px-6 py-3 rounded transition-all duration-200"
+              aria-label={`Call Dan on ${site.phone}`}
             >
-              Request A Scaffolding Quote
+              Call Dan For A Quote
             </a>
             <a
               href={site.instagram}

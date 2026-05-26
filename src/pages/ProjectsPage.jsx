@@ -2,6 +2,7 @@ import { featuredProjectNarratives } from "../data/siteContent";
 import { pageImages } from "../data/imageAssets";
 import PageMeta from "../components/PageMeta";
 import { Link } from "react-router-dom";
+import { site } from "../data/siteContent";
 
 export default function ProjectsPage() {
   return (
@@ -61,9 +62,13 @@ export default function ProjectsPage() {
             ARC delivers structured access packages for commercial, residential, and specialist scaffolding requirements across Ireland.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link to="/contact" className="inline-flex items-center justify-center bg-arc-orange hover:bg-arc-orange-dark text-white font-bold px-6 py-3 rounded shadow-orange transition-colors">
-              Request A Project Quote
-            </Link>
+            <a
+              href={`tel:${site.phoneTel}`}
+              className="inline-flex items-center justify-center bg-arc-orange hover:bg-arc-orange-dark text-white font-bold px-6 py-3 rounded shadow-orange transition-colors"
+              aria-label={`Call Dan on ${site.phone}`}
+            >
+              Call Dan For A Quote
+            </a>
             <Link to="/services" className="inline-flex items-center justify-center border-2 border-white/30 hover:border-white/60 hover:bg-white/5 text-white font-bold px-6 py-3 rounded transition-all">
               Explore Services
             </Link>

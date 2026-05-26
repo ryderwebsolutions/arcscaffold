@@ -2,7 +2,6 @@ export const site = {
   name: "ARC Scaffold Services",
   tagline: "Commercial-grade scaffolding systems for residential, commercial, and industrial sites across Ireland.",
   domain: "arcscaffolding.ie",
-  email: "arcscaffold@outlook.ie",
   phone: "+353 85 156 9641",
   phoneTel: "+353851569641",
   phoneSecondary: "+353 83 188 5888",

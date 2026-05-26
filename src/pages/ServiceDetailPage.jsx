@@ -1,6 +1,6 @@
 import { Link, Navigate, useParams } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
-import { servicePageContent } from "../data/siteContent";
+import { servicePageContent, site } from "../data/siteContent";
 import { pageImages } from "../data/imageAssets";
 
 export default function ServiceDetailPage() {
@@ -51,9 +51,13 @@ export default function ServiceDetailPage() {
         </div>
 
         <div className="flex flex-wrap gap-3">
-          <Link to="/contact" className="inline-flex items-center bg-arc-orange hover:bg-arc-orange-dark text-white font-bold px-6 py-3 rounded">
-            Request A Quote
-          </Link>
+          <a
+            href={`tel:${site.phoneTel}`}
+            className="inline-flex items-center bg-arc-orange hover:bg-arc-orange-dark text-white font-bold px-6 py-3 rounded"
+            aria-label={`Call Dan on ${site.phone}`}
+          >
+            Call Dan For A Quote
+          </a>
           <Link to="/projects" className="inline-flex items-center border-2 border-navy/20 hover:border-navy text-navy font-bold px-6 py-3 rounded">
             View Projects
           </Link>
