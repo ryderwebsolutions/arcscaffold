@@ -4,6 +4,7 @@ const arcmediaImports = import.meta.glob("../../arcmedia/*.jpeg", {
 });
 
 import industrialScaffoldingReference from "../../industrialscaffolding.jpeg";
+import schoolScaffoldingReference from "../../schoolscaffolding.jpeg";
 
 const arcmediaNames = Object.keys(arcmediaImports).sort((a, b) =>
   a.localeCompare(b)
@@ -32,7 +33,10 @@ export const pageImages = {
   ),
   services: [
     fromArcmedia(7, "Residential scaffolding around a live housing development"),
-    fromArcmedia(31, "Specialist scaffold setup on a larger non-industrial build"),
+    {
+      src: schoolScaffoldingReference,
+      alt: "Specialist school scaffolding setup on a larger non-industrial build",
+    },
     fromArcmedia(18, "Custom scaffold access around awkward site geometry"),
     {
       src: industrialScaffoldingReference,
@@ -41,7 +45,10 @@ export const pageImages = {
   ],
   featuredProjects: [
     fromArcmedia(14, "Residential scaffold package with phased roofline access"),
-    fromArcmedia(26, "Specialist scaffold layout for complex building access"),
+    {
+      src: schoolScaffoldingReference,
+      alt: "School scaffolding layout for specialist multi-elevation access",
+    },
     fromArcmedia(24, "Access-solution scaffold arrangement in a constrained work zone"),
     {
       src: industrialScaffoldingReference,
