@@ -8,12 +8,12 @@ export default function ServicesPage() {
     <section className="bg-arc-grey pt-28 pb-20 lg:pb-28">
       <PageMeta
         title="Scaffolding Services | ARC Scaffold Services"
-        description="Explore ARC's residential, commercial, industrial, and access scaffolding services across Ireland."
+        description="Explore ARC residential scaffolding, specialist builds, access solutions, and industrial scaffolding services across Laois, the Midlands, and Ireland."
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl lg:text-5xl font-black text-navy mb-4">Scaffolding Services</h1>
         <p className="text-arc-steel max-w-3xl mb-10">
-          ARC delivers service-focused scaffold packages that combine practical site logistics, compliance, and responsive project support.
+          ARC delivers practical scaffold packages built around safe access, clear sequencing, and reliable on-site support.
         </p>
 
         <div className="grid lg:grid-cols-2 gap-7">

@@ -27,24 +27,24 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2.5 bg-arc-orange/15 border border-arc-orange/35 rounded-full px-4 py-2 mb-8">
             <div className="w-2 h-2 bg-arc-orange rounded-full flex-shrink-0" />
             <span className="text-arc-orange font-semibold text-xs uppercase tracking-[0.15em]">
-              Premium Scaffolding Systems Across Ireland
+              Residential, Specialist & Industrial Scaffold Services
             </span>
           </div>
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-[80px] font-black text-white leading-[1.02] mb-6 tracking-tight">
-            Advanced
+            Practical
             <br />
             <span className="text-arc-orange">Scaffolding</span>
             <br />
-            Delivery
+            Support
           </h1>
 
           <p className="text-xl sm:text-2xl text-gray-200 max-w-2xl mb-4 leading-relaxed font-medium">
-            Commercial, residential, industrial, and access scaffolding engineered for real-world site performance.
+            Residential scaffolding, specialist builds, access solutions, and industrial scaffold services for real site conditions.
           </p>
 
           <p className="text-sm sm:text-base text-gray-400 max-w-2xl mb-10 leading-relaxed">
-            Planned, erected, inspected, and managed with a safety-first workflow by a trusted Irish scaffolding team.
+            Planned, erected, inspected, and managed by an experienced scaffold team serving Laois, the Midlands, and wider Ireland.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5 mb-10 max-w-4xl">

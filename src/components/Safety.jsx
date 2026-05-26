@@ -20,7 +20,7 @@ export default function Safety() {
               At ARC Scaffold Services, every scaffold system we design and erect is built around one fundamental principle — the safety of everyone on site.
             </p>
             <p className="text-arc-steel text-base leading-relaxed mb-8">
-              We operate in full compliance with current Irish health and safety legislation, applying rigorous inspection and tagging protocols on every job — commercial or residential, large or small.
+              We operate in full compliance with current Irish health and safety legislation, applying rigorous inspection and tagging protocols on every job, from domestic sites to specialist and industrial work areas.
             </p>
 
             {/* Feature list */}

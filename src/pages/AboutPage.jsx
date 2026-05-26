@@ -7,12 +7,12 @@ export default function AboutPage() {
     <section className="bg-navy pt-28 pb-20 lg:pb-28 text-white">
       <PageMeta
         title="About ARC Scaffold Services"
-        description="Learn about ARC Scaffold Services and our safety-led, commercial-grade approach to scaffolding delivery across Ireland."
+        description="Learn about ARC Scaffold Services, a practical scaffold contractor serving Laois, the Midlands, and projects across Ireland."
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl lg:text-5xl font-black mb-4">About ARC Scaffold Services</h1>
         <p className="text-gray-300 max-w-3xl mb-10">
-          ARC is built around disciplined scaffolding delivery, direct site communication, and long-term client trust across Ireland's commercial and residential sectors.
+          ARC is built around practical site delivery, direct communication, and long-term trust across residential, specialist, access, and industrial scaffold works.
         </p>
 
         <div className="grid lg:grid-cols-[1.2fr_1fr] gap-8 items-start">

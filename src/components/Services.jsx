@@ -58,7 +58,7 @@ export default function Services() {
           </h2>
           <div className="w-14 h-1 bg-arc-orange mx-auto mb-5" aria-hidden="true" />
           <p className="text-arc-steel text-base sm:text-lg leading-relaxed">
-            ARC Scaffold Services provides safe, compliant scaffolding for residential and commercial works across Ireland.
+            ARC Scaffold Services provides safe, compliant scaffolding for residential works, specialist builds, access solutions, and industrial environments.
           </p>
         </div>
 

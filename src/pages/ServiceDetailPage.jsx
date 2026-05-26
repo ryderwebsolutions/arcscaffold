@@ -17,7 +17,7 @@ export default function ServiceDetailPage() {
     <section className="bg-white pt-28 pb-20 lg:pb-28">
       <PageMeta
         title={`${content.title} | ARC Scaffold Services`}
-        description={`${content.title} by ARC Scaffold Services across Ireland.`}
+        description={`${content.title} delivered by ARC Scaffold Services across Laois, the Midlands, and Ireland.`}
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-xs font-bold uppercase tracking-[0.15em] text-arc-orange mb-2">Service Page</p>

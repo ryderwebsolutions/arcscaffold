@@ -24,7 +24,7 @@ export default function Testimonials() {
               loading="lazy"
             />
             <p className="text-arc-steel text-base sm:text-lg leading-relaxed">
-              ARC Scaffold focuses on safe, reliable and professional scaffolding services across residential and commercial projects.
+              ARC Scaffold focuses on safe, reliable, and professional scaffolding services across residential, specialist, access, and industrial projects.
             </p>
           </div>
         </div>

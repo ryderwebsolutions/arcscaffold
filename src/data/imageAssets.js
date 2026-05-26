@@ -24,7 +24,7 @@ const fromArcmedia = (index, alt) => ({
 export const pageImages = {
   homeHero: fromArcmedia(
     32,
-    "Large ARC scaffold installation with dark cinematic industrial lighting"
+    "Scaffold structure supporting a live build with practical staged access"
   ),
   trust: fromArcmedia(
     24,
@@ -32,21 +32,25 @@ export const pageImages = {
   ),
   services: [
     fromArcmedia(7, "Residential scaffolding around a live housing development"),
-    fromArcmedia(31, "Commercial scaffold system spanning multiple building elevations"),
+    fromArcmedia(31, "Specialist scaffold setup on a larger non-industrial build"),
+    fromArcmedia(18, "Custom scaffold access around awkward site geometry"),
     {
       src: industrialScaffoldingReference,
-      alt: "Industrial scaffolding in a confined utility environment with PPE worker and large green process pipe",
+      alt: "Industrial scaffolding in a confined utility environment with process pipe infrastructure",
     },
-    fromArcmedia(18, "Specialist access scaffold setup for constrained work area"),
   ],
   featuredProjects: [
-    fromArcmedia(26, "Wide commercial scaffolding installation with phased access zones"),
-    fromArcmedia(14, "Residential scaffold package with clean perimeter access"),
-    fromArcmedia(11, "Industrial access scaffold around plant and services"),
+    fromArcmedia(14, "Residential scaffold package with phased roofline access"),
+    fromArcmedia(26, "Specialist scaffold layout for complex building access"),
+    fromArcmedia(24, "Access-solution scaffold arrangement in a constrained work zone"),
+    {
+      src: industrialScaffoldingReference,
+      alt: "Industrial scaffold access system beside utility process infrastructure",
+    },
   ],
   projectsPageLead: fromArcmedia(
     30,
-    "Large-scale ARC scaffolding structure across a commercial project"
+    "ARC scaffold structure across a multi-elevation specialist build"
   ),
   projectsGallery: [0, 3, 5, 8, 10, 12, 16, 19, 21, 23, 27, 33, 36, 38, 41].map(
     (index, idx) =>
@@ -71,7 +75,7 @@ export const pageImages = {
   ),
   aboutHero: fromArcmedia(
     29,
-    "ARC scaffold leadership and delivery standards represented on a major site"
+    "ARC scaffold team delivering practical staged access on a live site"
   ),
   contactHero: fromArcmedia(
     1,
@@ -81,8 +85,11 @@ export const pageImages = {
     "residential-scaffolding": [7, 14, 20].map((index, idx) =>
       fromArcmedia(index, `Residential scaffolding image ${idx + 1}`)
     ),
+    "specialist-builds": [31, 26, 33].map((index, idx) =>
+      fromArcmedia(index, `Specialist builds scaffolding image ${idx + 1}`)
+    ),
     "commercial-scaffolding": [31, 26, 33].map((index, idx) =>
-      fromArcmedia(index, `Commercial scaffolding image ${idx + 1}`)
+      fromArcmedia(index, `Specialist builds scaffolding image ${idx + 1}`)
     ),
     "industrial-scaffolding": [
       {
@@ -90,8 +97,11 @@ export const pageImages = {
         alt: "Industrial scaffold access system beside large process pipe with PPE operative in confined infrastructure environment",
       },
     ],
-    "access-scaffolding": [18, 11, 24].map((index, idx) =>
-      fromArcmedia(index, `Access scaffolding solution image ${idx + 1}`)
+    "access-solutions": [18, 24, 34].map((index, idx) =>
+      fromArcmedia(index, `Access solutions scaffolding image ${idx + 1}`)
+    ),
+    "access-scaffolding": [18, 24, 34].map((index, idx) =>
+      fromArcmedia(index, `Access solutions scaffolding image ${idx + 1}`)
     ),
   },
 };

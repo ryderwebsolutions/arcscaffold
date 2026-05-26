@@ -9,12 +9,12 @@ export default function ProjectsPage() {
     <section className="bg-white pt-28 pb-20 lg:pb-28">
       <PageMeta
         title="Scaffolding Projects | ARC Scaffold Services"
-        description="View ARC's commercial, residential, and access scaffolding projects across Ireland."
+        description="View ARC residential scaffolding, specialist builds, access solutions, and industrial scaffold projects across Laois, the Midlands, and Ireland."
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl lg:text-5xl font-black text-navy mb-4">Projects</h1>
         <p className="text-arc-steel max-w-3xl mb-10">
-          A structured portfolio of ARC scaffolding projects, presented by category with clear scope, challenge, solution, and outcome.
+          A grounded portfolio of scaffold projects with clear scope, challenge, solution, and outcome by service type.
         </p>
 
         <div className="space-y-14">
@@ -59,7 +59,7 @@ export default function ProjectsPage() {
         <div className="mt-14 rounded-2xl bg-navy text-white p-7 lg:p-10 border border-white/10">
           <h2 className="text-3xl font-black mb-2">Need a scaffolding partner for your next project?</h2>
           <p className="text-gray-300 max-w-2xl mb-6">
-            ARC delivers structured access packages for commercial, residential, and specialist scaffolding requirements across Ireland.
+            ARC delivers practical access packages for residential, specialist, and industrial scaffold requirements across Ireland.
           </p>
           <div className="flex flex-wrap gap-3">
             <a

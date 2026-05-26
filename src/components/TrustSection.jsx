@@ -8,10 +8,10 @@ export default function TrustSection() {
         <div className="grid lg:grid-cols-[1.2fr_1fr] gap-8 lg:gap-10 items-center">
           <div>
             <h2 id="trust-heading" className="text-3xl sm:text-4xl font-black text-white mb-4">
-              Trusted Scaffold Delivery Built on Compliance
+              Trusted Scaffold Support Built on Safety
             </h2>
             <p className="text-gray-300 max-w-2xl mb-7">
-              ARC Scaffold Services combines practical site experience with strict safety control so clients get reliable access systems, clear communication, and predictable outcomes.
+              ARC Scaffold Services combines practical site experience with strict safety control so clients get reliable access, clear communication, and dependable delivery.
             </p>
             <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3" aria-label="ARC trust points">
               {trustPoints.map((point) => (

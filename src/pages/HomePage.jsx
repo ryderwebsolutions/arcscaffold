@@ -10,8 +10,8 @@ export default function HomePage() {
   return (
     <>
       <PageMeta
-        title="ARC Scaffold Services | Commercial & Residential Scaffolding Ireland"
-        description="ARC Scaffold Services delivers premium commercial, residential, industrial, and specialist access scaffolding across Ireland."
+        title="ARC Scaffold Services | Residential & Specialist Scaffolding Contractor Laois"
+        description="ARC Scaffold Services provides residential scaffolding, specialist builds, access solutions, and industrial scaffold services across Laois, the Midlands, and Ireland."
       />
       <Hero />
       <TrustSection />

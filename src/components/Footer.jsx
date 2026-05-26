@@ -36,7 +36,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-gray-400 text-sm leading-relaxed mb-5 max-w-xs">
-              Advanced scaffolding specialists providing safe, reliable scaffolding solutions for commercial, residential, and trade projects across Ireland.
+              Practical scaffolding contractor for residential jobs, specialist builds, access solutions, and industrial works across Laois, the Midlands, and Ireland.
             </p>
 
             <div className="space-y-2.5 text-sm">

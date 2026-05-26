@@ -1,6 +1,7 @@
 export const site = {
   name: "ARC Scaffold Services",
-  tagline: "Commercial-grade scaffolding systems for residential, commercial, and industrial sites across Ireland.",
+  tagline:
+    "Practical scaffolding contractor for residential builds, specialist access, and industrial works across Laois, the Midlands, and Ireland.",
   domain: "arcscaffolding.ie",
   phone: "+353 85 156 9641",
   phoneTel: "+353851569641",
@@ -8,8 +9,9 @@ export const site = {
   phoneTelSecondary: "+353831885888",
   contacts: "Dan and Keith",
   instagram: "https://www.instagram.com/arcscaffoldservices/",
-  linkedin: "https://www.linkedin.com/in/arc-scaffolding-services-ltd-2518383aa?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-  serviceArea: "Nationwide Ireland Coverage",
+  linkedin:
+    "https://www.linkedin.com/in/arc-scaffolding-services-ltd-2518383aa?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+  serviceArea: "Laois, Midlands & Nationwide Ireland",
 };
 
 export const navLinks = [
@@ -25,33 +27,36 @@ export const coreServices = [
   {
     slug: "residential-scaffolding",
     title: "Residential Scaffolding",
-    short: "Safe access for new builds, roof works, renovations, and phased domestic projects.",
+    short:
+      "Safe scaffold access for housing developments, roof works, renovations, extensions, and domestic maintenance.",
   },
   {
-    slug: "commercial-scaffolding",
-    title: "Commercial Scaffolding",
-    short: "Program-driven scaffold packages for offices, schools, retail, and industrial schemes.",
+    slug: "specialist-builds",
+    title: "Specialist Builds",
+    short:
+      "Custom scaffold setups for schools, larger one-off builds, awkward sites, and non-standard access requirements.",
+  },
+  {
+    slug: "access-solutions",
+    title: "Access Solutions",
+    short:
+      "Practical temporary structures and custom access systems for tight spaces and difficult working areas.",
   },
   {
     slug: "industrial-scaffolding",
     title: "Industrial Scaffolding",
     short:
-      "Specialist scaffold access solutions for industrial plants, infrastructure works, confined environments, and high-spec technical projects.",
-  },
-  {
-    slug: "access-scaffolding",
-    title: "Access Scaffolding",
-    short: "Purpose-built access systems for specialist trades and constrained environments.",
+      "Scaffold access for genuine industrial environments including plants, utility infrastructure, and heavy maintenance zones.",
   },
 ];
 
 export const trustPoints = [
   "Fully Compliant",
-  "Commercial & Residential",
+  "Residential & Specialist Builds",
   "Safety-First Approach",
-  "Specialist Access Solutions",
+  "Practical Access Solutions",
   "Insured & Experienced",
-  "Ireland Coverage",
+  "Laois, Midlands & Ireland",
 ];
 
 export const processSteps = [
@@ -87,92 +92,102 @@ export const processSteps = [
   },
 ];
 
+const residentialService = {
+  title: "Residential Scaffolding",
+  intro:
+    "Reliable domestic scaffolding for housing developments, roof works, home upgrades, and phased residential jobs.",
+  points: [
+    "Housing developments and phased residential projects",
+    "Roof replacement, chimney works, and roofline access",
+    "Home renovations, extensions, and facade maintenance",
+    "Neighbour-conscious setup, tidy logistics, and safe handover",
+  ],
+};
+
+const specialistBuildsService = {
+  title: "Specialist Builds",
+  intro:
+    "Custom scaffold planning for schools, larger one-off builds, and awkward non-industrial sites that need tailored access.",
+  points: [
+    "School and community building access",
+    "Larger custom structures and phased elevations",
+    "Awkward layouts requiring bespoke scaffold design",
+    "Planned sequencing to keep trades moving safely",
+  ],
+};
+
+const accessSolutionsService = {
+  title: "Access Solutions",
+  intro:
+    "Purpose-built access solutions for tight areas, temporary structures, and constrained work locations.",
+  points: [
+    "Difficult or restricted access routes",
+    "Temporary scaffold structures for short-term works",
+    "Custom platform and route design for constrained areas",
+    "Responsive site adaptations when access needs change",
+  ],
+};
+
+const industrialService = {
+  title: "Industrial Scaffolding",
+  intro:
+    "Technical scaffold access for genuine industrial environments including plants, utility sites, and heavy infrastructure.",
+  points: [
+    "Plant and utility infrastructure access",
+    "Confined-space and maintenance platform planning",
+    "Industrial shutdown and phased maintenance support",
+    "High-compliance execution for critical industrial work zones",
+  ],
+};
+
 export const servicePageContent = {
-  "residential-scaffolding": {
-    title: "Residential Scaffolding",
-    intro:
-      "Planned domestic scaffolding systems for housing developments, private homes, and roofline works with a clean, safety-first finish.",
-    points: [
-      "New-build and phased residential developments",
-      "Roof replacement and chimney access platforms",
-      "Façade maintenance and external insulation access",
-      "Neighbour-conscious logistics and tidy handover",
-    ],
-  },
-  "commercial-scaffolding": {
-    title: "Commercial Scaffolding",
-    intro:
-      "Large-format scaffold delivery for commercial and industrial projects requiring strict sequencing, compliance, and coordination.",
-    points: [
-      "Office, retail, education, and healthcare projects",
-      "Program-linked phased access plans",
-      "Heavy-duty loading bays and protected walkways",
-      "Coordination with principal contractors and site teams",
-    ],
-  },
-  "industrial-scaffolding": {
-    title: "Industrial Scaffolding",
-    intro:
-      "Technical scaffold access for industrial plants, utility infrastructure, confined process environments, and high-spec maintenance operations.",
-    points: [
-      "Confined-space scaffold planning and controlled access routes",
-      "Industrial maintenance shutdown support and phased delivery",
-      "Pipework, process plant, and utility-infrastructure scaffold systems",
-      "PPE-first execution with high-compliance site coordination",
-    ],
-  },
-  "access-scaffolding": {
-    title: "Access Scaffolding",
-    intro:
-      "Purpose-built scaffold access solutions for specialist trades, plant areas, and high-risk constrained zones.",
-    points: [
-      "Industrial plant and process access",
-      "Confined-zone and internal scaffold systems",
-      "Trade-specific routes for M&E and façade teams",
-      "Short-notice adaptations for live projects",
-    ],
-  },
+  "residential-scaffolding": residentialService,
+  "specialist-builds": specialistBuildsService,
+  "commercial-scaffolding": specialistBuildsService,
+  "access-solutions": accessSolutionsService,
+  "access-scaffolding": accessSolutionsService,
+  "industrial-scaffolding": industrialService,
 };
 
 export const projectCategories = [
-  "Commercial Projects",
   "Residential Scaffolding",
+  "Specialist Builds",
   "Access Solutions",
-  "Large-Scale Installations",
+  "Industrial Scaffolding",
 ];
 
 export const featuredProjectNarratives = [
   {
-    category: "Commercial Projects",
-    title: "Multi-Block Commercial Envelope Access",
-    scope: "Full perimeter scaffold package across a staged commercial complex.",
-    challenge: "Live logistics routes and strict sequencing windows.",
-    solution: "Phased bays with protected pedestrian zones and coordinated handovers.",
-    outcome: "Continuous contractor access with zero programme stoppage from scaffold constraints.",
+    category: "Residential Scaffolding",
+    title: "Phased Residential Roofline Access",
+    scope: "Multi-elevation scaffold package for roofline and external upgrade works.",
+    challenge: "Keeping domestic access clear while works progressed in phases.",
+    solution: "Staged lifts with controlled material zones and safe resident routes.",
+    outcome: "Continuous trade access with a tidy, controlled residential setup.",
   },
   {
-    category: "Residential Scaffolding",
-    title: "High-Density Residential Elevation Works",
-    scope: "Comprehensive access for roofline and façade trades across multiple units.",
-    challenge: "Limited footprint and occupied neighbouring properties.",
-    solution: "Compact loading strategy with controlled material zones.",
-    outcome: "Safe trade flow and clean site presentation through all phases.",
+    category: "Specialist Builds",
+    title: "School & Community Building Access",
+    scope: "Custom scaffold setup for larger elevations and awkward workfronts.",
+    challenge: "Complex geometry and changing work areas on a live local site.",
+    solution: "Tailored scaffold layout with phased handovers for each section.",
+    outcome: "Reliable access for follow-on trades without site disruption.",
   },
   {
     category: "Access Solutions",
-    title: "Industrial Plant Access Package",
-    scope: "Targeted scaffold access around active services and process equipment.",
-    challenge: "Constrained clearances and sensitive assets.",
-    solution: "Custom platforming with route separation and safety tagging.",
-    outcome: "Efficient maintenance access with compliant working zones.",
+    title: "Constrained Access Platform Package",
+    scope: "Temporary scaffold structures for tight work zones and restricted approach routes.",
+    challenge: "Limited footprint and non-standard access points.",
+    solution: "Purpose-built platforming with safe, practical movement routes.",
+    outcome: "Trades reached difficult areas safely without overbuilding the scaffold.",
   },
   {
-    category: "Large-Scale Installations",
-    title: "Major Site-Wide Scaffold Infrastructure",
-    scope: "Large multi-elevation scaffold network supporting concurrent trades.",
-    challenge: "High workforce density and changing work fronts.",
-    solution: "Central scaffold management with rolling inspections and support.",
-    outcome: "Reliable large-scale access system trusted across the full programme.",
+    category: "Industrial Scaffolding",
+    title: "Utility Plant Maintenance Access",
+    scope: "Specialist scaffold access around plant infrastructure and process equipment.",
+    challenge: "Confined industrial space with critical service interfaces.",
+    solution: "Technical platform arrangement with strict safety controls.",
+    outcome: "Safe maintenance access delivered to industrial compliance requirements.",
   },
 ];
 
@@ -205,7 +220,7 @@ export const safetySections = [
 
 export const aboutPillars = [
   "Established leadership with on-site decision-making",
-  "Commercial-grade delivery standards for all project sizes",
+  "Practical scaffold solutions matched to each site",
   "Clear communication from survey to dismantle",
-  "Safety-led execution trusted by principal contractors",
+  "Safety-led execution trusted by local clients and contractors",
 ];

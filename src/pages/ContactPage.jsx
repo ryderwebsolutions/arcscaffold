@@ -7,12 +7,12 @@ export default function ContactPage() {
     <section className="bg-arc-grey pt-28 pb-20 lg:pb-28">
       <PageMeta
         title="Contact ARC Scaffold Services"
-        description="Call Dan or Keith for fast scaffolding support, site planning, and quote requests across Ireland."
+        description="Call Dan or Keith for residential scaffolding, specialist scaffold services, and scaffold access support across Laois, the Midlands, and Ireland."
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl lg:text-5xl font-black text-navy mb-4">Contact ARC</h1>
         <p className="text-arc-steel max-w-3xl mb-10">
-          Fast direct contact for scaffolding jobs across Ireland. Call Dan or Keith now for immediate support.
+          Fast direct contact for scaffold jobs in Laois, the Midlands, and across Ireland. Call Dan or Keith for immediate support.
         </p>
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-start">

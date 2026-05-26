@@ -43,7 +43,7 @@ export default function WhyChoose() {
           </h2>
           <div className="w-14 h-1 bg-arc-orange mx-auto mb-5" aria-hidden="true" />
           <p className="text-gray-400 text-base sm:text-lg leading-relaxed">
-            We bring experienced, safety-focused scaffolding support to residential and commercial sites.
+            We bring experienced, safety-focused scaffolding support to residential, specialist, access, and industrial sites.
           </p>
         </div>
 
