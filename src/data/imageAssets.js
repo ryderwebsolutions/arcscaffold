@@ -37,7 +37,7 @@ export const pageImages = {
       src: schoolScaffoldingReference,
       alt: "Specialist school scaffolding setup on a larger non-industrial build",
     },
-    fromArcmedia(18, "Custom scaffold access around awkward site geometry"),
+    fromArcmedia(34, "Custom temporary access scaffold in a tight working area"),
     {
       src: industrialScaffoldingReference,
       alt: "Industrial scaffolding in a confined utility environment with process pipe infrastructure",
